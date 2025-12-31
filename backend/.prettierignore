@@ -1,0 +1,22 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build / compiled files
+dist/
+coverage/
+
+# OS system files
+.DS_Store
+Thumbs.db
+
+# Git folder
+.git/
