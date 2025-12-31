@@ -3,12 +3,18 @@ import cors from 'cors';
 
 const app = express();
 
+const allowed = process.env.CORS_ORIGIN.split(' ');
+
 app.use(
    cors({
-      origin: process.env.CORS_ORIGIN,
+      origin: (origin, cb) => {
+         if (!origin || allowed.includes(origin)) return cb(null, true);
+         return cb(new Error('CORS Blocked'));
+      },
       credentials: true,
    }),
 );
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -27,7 +33,7 @@ app.use('/api/v1/favourites', favoritesRouter);
 app.use('/api/v1/orders', orderRouter);
 
 app.get('/', (req, res) => {
-  res.send('Backend is running...');
+   res.send('Backend is running...');
 });
 
 export { app };
