@@ -10,7 +10,7 @@ A comprehensive full-stack e-commerce bookstore application built with modern we
 
 ## 🌐 Live Deployments
 
-- **Frontend**: [book-store-fullstack-awja.vercel.app](https://book-store-fullstack-awja.vercel.app)
+- **Frontend**: [book-store-fullstack-awja.vercel.app](https://book-store-fullstack-ak5f.vercel.app)
 - **Backend API**: [book-store-fullstack-eosin.vercel.app](https://book-store-fullstack-eosin.vercel.app)
 - **Repository**: [GitHub Repository](https://github.com/Muhammad-Shakeel123/book-store-fullstack.git)
 
