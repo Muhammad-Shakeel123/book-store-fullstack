@@ -1,3 +1,7 @@
+import ViewBookDetails from "./components/viewBookDetails/ViewBookDetails";
+import Favourites from "./components/profile/Favourites.jsx";
+import UserOrderHistory from "./components/profile/UserOrderHistory.jsx";
+import Settings from "./components/profile/Settings.jsx";
 import Home from "./pages/Home";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
@@ -6,14 +10,9 @@ import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import Cart from "./pages/Cart";
 import Profile from "./pages/Profile";
-import ViewBookDetails from "./components/viewBookDetails/ViewBookDetails";
-import Favourites from "./components/profile/Favourites.jsx";
-import UserOrderHistory from "./components/profile/UserOrderHistory.jsx";
-import Settings from "./components/profile/Settings.jsx";
 import AllOrders from "./pages/AllOrders.jsx";
 import AddBook from "./pages/AddBook.jsx";
 import UpdateBook from "./pages/UpdateBook.jsx";
-
 import { Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
